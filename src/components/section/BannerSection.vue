@@ -2,11 +2,9 @@
   <section id="bannerType" class="banner__wrap" :class="fonts">
     <h2 class="blind">배너 영역</h2>
     <div class="banner__inner">
-      <h3 class="title">키친 박스</h3>
+      <h3 class="title">{{ BannerType[0].h3 }}</h3>
       <p class="desc">
-        간편식세트부터 샐러드까지<br />
-        인원이 적어도 조리시설이 없어도<br />
-        식사 제공이 가능합니다.
+        {{ BannerType[0].p }}
       </p>
     </div>
   </section>
@@ -16,6 +14,16 @@ export default {
   props: {
     attr: String,
     layout: String,
+  },
+  data: function () {
+    return {
+      BannerType: [
+        {
+          h3: "키친 박스",
+          p: "간편식세트부터 샐러드까지 인원이 적어도 조리시설이 없어도 식사 제공이 가능합니다.",
+        },
+      ],
+    };
   },
 };
 </script>
