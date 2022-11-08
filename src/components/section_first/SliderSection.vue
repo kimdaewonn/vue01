@@ -17,53 +17,44 @@
         class="mySwiper"
       >
         <swiper-slide>
-          <div
-            class="desc"
-            v-for="slider in SliderType"
-            v-bind:key="slider.SliderInner"
-          >
-            <span>{{ slider.small }}</span>
-            <h3>{{ slider.h3 }}</h3>
+          <div class="desc">
+            <span>SNACKBOX</span>
+            <h3>에너지가 필요할 때</h3>
             <p>
-              {{ slider.p }}
+              에너지가 부족한 당신!! 식사를 하기에는<br />
+              애매하고 출출해서 무언가 먹고 싶지 않나요?
             </p>
             <div class="btn">
-              <a class="" :class="color" href="#">{{ slider.btn }}</a>
-              <a href="#" class="black" :class="color2">{{ slider.btn2 }}</a>
+              <a href="#">자세히 보기</a>
+              <a href="#" class="black">정보 보기</a>
             </div>
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div
-            class="desc"
-            v-for="slider in SliderType"
-            v-bind:key="slider.SliderInner"
-          >
-            <span>{{ slider.small }}</span>
-            <h3>{{ slider.h3 }}</h3>
+          <div class="desc">
+            <span>SNACKBOX</span>
+            <h3>에너지가 필요할 때</h3>
             <p>
-              {{ slider.p }}
+              에너지가 부족한 당신!! 식사를 하기에는<br />
+              애매하고 출출해서 무언가 먹고 싶지 않나요?
             </p>
             <div class="btn">
-              <a class="" :class="color" href="#">{{ slider.btn }}</a>
-              <a href="#" class="black" :class="color2">{{ slider.btn2 }}</a>
+              <a href="#">자세히 보기</a>
+              <a href="#" class="black">정보 보기</a>
             </div>
           </div>
         </swiper-slide>
         <swiper-slide>
-          <div
-            class="desc"
-            v-for="slider in SliderType"
-            v-bind:key="slider.SliderInner"
-          >
-            <span>{{ slider.small }}</span>
-            <h3>{{ slider.h3 }}</h3>
+          <div class="desc">
+            <span>SNACKBOX</span>
+            <h3>에너지가 필요할 때</h3>
             <p>
-              {{ slider.p }}
+              에너지가 부족한 당신!! 식사를 하기에는<br />
+              애매하고 출출해서 무언가 먹고 싶지 않나요?
             </p>
             <div class="btn">
-              <a class="" :class="color" href="#">{{ slider.btn }}</a>
-              <a href="#" class="black" :class="color2">{{ slider.btn2 }}</a>
+              <a href="#">자세히 보기</a>
+              <a href="#" class="black">정보 보기</a>
             </div>
           </div>
         </swiper-slide>
@@ -83,38 +74,6 @@ export default {
     Swiper,
     SwiperSlide,
   },
-
-  data: function () {
-    return {
-      SliderType: [
-        {
-          h3: "에너지가 필요할 때",
-          small: "SNACKBOX",
-          btn: "자세히 보기",
-          btn2: "정보 보기",
-          color: "",
-          color2: "black",
-        },
-        {
-          h3: "에너지가 필요할 때",
-          small: "SNACKBOX",
-          btn: "자세히 보기",
-          btn2: "정보 보기",
-          color: "",
-          color2: "black",
-        },
-        {
-          h3: "에너지가 필요할 때",
-          small: "SNACKBOX",
-          btn: "자세히 보기",
-          btn2: "정보 보기",
-          color: "",
-          color2: "black",
-        },
-      ],
-    };
-  },
-
   setup() {
     return {
       modules: [Autoplay, Pagination, Navigation],

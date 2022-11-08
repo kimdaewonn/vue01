@@ -3,22 +3,22 @@
     <h2 class="blind">이미지/텍스트 영역</h2>
     <div class="imgText__inner" :class="layout">
       <div class="imgText__txt">
-        <h3>{{ ImageTextType[0].h3 }}</h3>
+        <h3>24시간 언제 어디서나 신선하게</h3>
         <p>
-          {{ ImageTextType[0].p }}
+          ‘콜드체인 배달 시스템’에 따라<br />
+          신선도를 유지해 안전하게 배송되며,<br />
+          온도 모니터링 기능이 가능한<br />
+          스마트 디바이스로 현장관리자 없이<br />
+          24시간 운영 가능한 비대면 플랫폼<br />
+          입니다.
         </p>
       </div>
-      <div
-        class="imgText__img"
-        :class="imagetext.img"
-        v-for="imagetext in ImageText"
-        v-bind:key="imagetext.ImageTextInner"
-      >
-        <a class="" :class="imagetext.color" href="/">{{ imagetext.small }}</a>
+      <div class="imgText__img img1">
+        <a href="/">결제 박스</a>
       </div>
-      <!-- <div class="imgText__img img2">
+      <div class="imgText__img img2">
         <a class="blue" href="/">스낵 박스</a>
-      </div> -->
+      </div>
     </div>
   </section>
 </template>
@@ -27,28 +27,6 @@ export default {
   props: {
     attr: String,
     layout: String,
-  },
-  data: function () {
-    return {
-      ImageTextType: [
-        {
-          h3: "24시간 언제 어디서나 신선하게",
-          p: " '콜드체인 배달 시스템'에 따라 신선도를 유지해 안전하게 배송되며 온도 모니터링 기능이 가능한 스마트 디바이스로 현장관리자 없이 24시간 운영 가능한 비대면 플랫폼 입니다.",
-        },
-      ],
-      ImageText: [
-        {
-          img: "img1",
-          small: "결제 박스",
-          color: "",
-        },
-        {
-          img: "img2",
-          small: "스낵 박스",
-          color: "blue",
-        },
-      ],
-    };
   },
 };
 </script>
